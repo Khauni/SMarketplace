@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using Rocket.Core.Utils;
 using Rocket.Unturned.Player;
 using SDG.NetTransport;
@@ -44,7 +44,7 @@ public class Market_Session : MonoBehaviour
         _keyID = Instance.Configuration.Instance.uiEffectKey;
         _playerListedItems = Instance.marketplaceService.GetPlayerListedItems(this._player.channel.owner.playerID.steamID.m_SteamID);
         
-        player.disablePluginWidgetFlag(EPluginWidgetFlags.ShowLifeMeters);
+
 
         EffectManager.onEffectButtonClicked += OnEffectButtonClicked;
         EffectManager.onEffectTextCommitted += OnEffectTextCommitted;
